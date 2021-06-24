@@ -8,12 +8,13 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var vornameOutlet: UITextField!
     @IBOutlet weak var nachnameOutlet: UITextField!
-    @IBOutlet weak var usernameOutlet: UITextField!
+    @IBOutlet weak var emailOutlet: UITextField!
     @IBOutlet weak var passwordOutlet: UITextField!
     
     
@@ -32,16 +33,15 @@ class ViewController: UIViewController {
     
         let ref = Database.database().reference()
         
-        ref.childByAutoId().setValue(["Vorname":vornameOutlet.text, "Nachname":nachnameOutlet.text, "Username":usernameOutlet.text, "Passwort":passwordOutlet.text])
-    }
-    
-    @IBAction func submitButton() {
+        ref.childByAutoId().setValue(["Vorname":vornameOutlet.text, "Nachname":nachnameOutlet.text, "Email":emailOutlet.text, "Passwort":passwordOutlet.text])
         
-        let ref = Database.database().reference()
-        
-        ref.childByAutoId().setValue(["Vorname":vornameOutlet.text, "Nachname":nachnameOutlet.text, "Username":usernameOutlet, "Alter":passwordOutlet.text])
-        
-       
+        Auth.auth().createUser(withEmail: emailOutlet.text!, password: passwordOutlet.text!) { (result, error) in
+            if error != nil {
+                print("Error creating User")
+            } else {
+                
+            }
+        }
         
     }
     

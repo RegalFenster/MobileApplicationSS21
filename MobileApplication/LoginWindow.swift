@@ -35,6 +35,24 @@ class Login: UIViewController {
         
         print(conditionRef)
         
+        if usernameTxtFld.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTxtFld.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            print("please fill all the fields")
+            
+            Auth.auth().signIn(withEmail: usernameTxtFld.text!, password: passwordTxtFld.text!){ [weak self] authResult, error in
+                guard let strongSelf = self else {return}
+    
+                if let user = user {
+                    let uid = user.uid
+                    let email = user.email
+                    
+                    var 
+                }
+                
+            }
+        }
+        
+        
+        
         /*
         roofRef.child("Username").observeSingleEvent(of: .value, with: { (snapshot) in
         

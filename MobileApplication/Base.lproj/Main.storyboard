@@ -30,7 +30,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivv-o2-Acu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivv-o2-Acu">
                                 <rect key="frame" x="130" y="280" width="154" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -123,9 +123,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="NmN-zq-h9S"/>
                     <connections>
+                        <outlet property="emailOutlet" destination="e3c-g2-m8D" id="eR6-Ip-ef2"/>
                         <outlet property="nachnameOutlet" destination="9Ly-QI-ZNu" id="IAp-OA-lQz"/>
                         <outlet property="passwordOutlet" destination="pga-cl-JWy" id="QpZ-d4-OJP"/>
-                        <outlet property="usernameOutlet" destination="e3c-g2-m8D" id="Py6-O3-WUM"/>
                         <outlet property="vornameOutlet" destination="YO3-eI-YBS" id="Gk5-xh-w9L"/>
                     </connections>
                 </viewController>
@@ -277,7 +277,7 @@
                                     <segue destination="aAi-qO-93E" kind="modal" modalPresentationStyle="fullScreen" id="8Xy-yx-Z8k"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYW-rf-LXu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYW-rf-LXu">
                                 <rect key="frame" x="130" y="134" width="154" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -406,6 +406,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ub0-WP-TNc"/>
+        <segue reference="sXw-Bg-etc"/>
     </inferredMetricsTieBreakers>
 </document>
