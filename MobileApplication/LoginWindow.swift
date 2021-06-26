@@ -8,92 +8,69 @@
 
 import UIKit
 import Foundation
+import Firebase
 import FirebaseUI
 import FirebaseAuth
 import FirebaseDatabase
+import GoogleSignIn
 
-class Login: UIViewController {
+class Login: UIViewController, GIDSignInDelegate {
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        self.performSegue(withIdentifier: "ToPhoto", sender: self)
+        print(GIDSignIn.sharedInstance()?.currentUser)
+    }
+    
     
     @IBOutlet weak var usernameTxtFld: UITextField!
     @IBOutlet weak var passwordTxtFld: UITextField!
     
     @IBOutlet weak var loginBtn: UIButton!
     
-    var nuber = 5
+
+    @IBOutlet weak var nextPageButton: UIButton!
+    
     var ref: DatabaseReference!
+    var isTrue = false
+    
+    @IBOutlet var signInButton: GIDSignInButton!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance()?.delegate = self
+        
+        nextPageButton.isHidden = true
+    }
+    
+    
+    func txtFldIsEmpty() {
+        if usernameTxtFld.text?.trimmingCharacters(in: .whitespacesAndNewlines) != "" || passwordTxtFld.text?.trimmingCharacters(in: .whitespacesAndNewlines) != "" {
+            loginBtn.isEnabled = true
+        }
+    }
+    
+    @IBAction func GoogleButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "ToPhoto", sender: self)
+        nextPageButton.isHidden = false
+        isTrue = false
+        print(isTrue)
+        
+    }
     
     @IBAction func LoginAction(_ sender: Any) {
-       // var ref: DatabaseReference!
-
+      
+        
+       
+        
         ref = Database.database().reference()
         
-    //    print(ref.child("Username").value(forKey: "Username"))
-        
         let roofRef = FirebaseDatabase.Database.database().reference()
-        
-        let conditionRef = roofRef.child("Username")
-        
-        print(conditionRef)
-        
-        if usernameTxtFld.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTxtFld.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
-            print("please fill all the fields")
-            
-            Auth.auth().signIn(withEmail: usernameTxtFld.text!, password: passwordTxtFld.text!){ [weak self] authResult, error in
-                guard let strongSelf = self else {return}
     
-                if let user = user {
-                    let uid = user.uid
-                    let email = user.email
-                    
-                    var 
-                }
-                
-            }
-        }
-        
-        
-        
-        /*
-        roofRef.child("Username").observeSingleEvent(of: .value, with: { (snapshot) in
-        
- if snapshot.hasChild(usernameTxtFld.text) {
-                print("logo")
-            } else {
-                print("fail")
-            }
  
-        })
- */
-        
-        /*
-        self.ref.child("users/\(user.uid)/username").getData { (error, snapshot) in
-            if let error = error {
-                print("Error getting data \(error)")
-            }
-            else if snapshot.exists() {
-                print("Got data \(snapshot.value!)")
-            }
-            else {
-                print("No data available")
-            }
-        }
-        
-        
-    
-    var actionCodeSettings = ActionCodeSettings()
-    actionCodeSettings.url = URL(string: "https://example.appspot.com")
-    actionCodeSettings.handleCodeInApp = true
-    actionCodeSettings.setAndroidPackageName("com.firebase.example", installIfNotAvailable: false, minimumVersion: "12")
-         */
-        /*
-     let provider = FUIEmailAuth(authUI: FUIAuth.defaultAuthUI()!,
-                                signInMethod: FIREmailLinkAuthSignInMethod,
-                                forceSameDevice: false,
-                                allowNewEmailAccounts: true,
-                                actionCodeSetting: actionCodeSettings)
-        */
-            }
-    
-    
-    
+           
+                    
+    }
 }

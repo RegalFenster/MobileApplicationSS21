@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordOutlet: UITextField!
     
     
-    
+    /*
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,19 +29,27 @@ class ViewController: UIViewController {
         
         
     }
+*/
     @IBAction func enterButton(_ sender: UIButton) {
     
         let ref = Database.database().reference()
         
         ref.childByAutoId().setValue(["Vorname":vornameOutlet.text, "Nachname":nachnameOutlet.text, "Email":emailOutlet.text, "Passwort":passwordOutlet.text])
         
+     
+       
+        
         Auth.auth().createUser(withEmail: emailOutlet.text!, password: passwordOutlet.text!) { (result, error) in
+     
             if error != nil {
+            
                 print("Error creating User")
+               
             } else {
                 
             }
         }
+        
         
     }
     

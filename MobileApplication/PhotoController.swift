@@ -10,14 +10,31 @@ import UIKit
 import Foundation
 import FirebaseStorage
 import FirebaseUI
+import GoogleSignIn
 
-class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GIDSignInDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        return
+    }
     
     @IBOutlet weak var imageData: UIImageView!
+    @IBOutlet weak var feedbackText: UITextView!
     
     private let storage = Storage.storage().reference()
     
     let storageRef = Storage.storage().reference()
+    
+    
+    
+    
+    @IBOutlet weak var backButtonAction: UIButton!
+    
+    
+    @IBAction func signOut(_ sender: Any) {
+        GIDSignIn.sharedInstance()?.disconnect()
+        
+    }
+    
     
     @IBAction func uploadButton(_ sender: UIButton) {
        let picker = UIImagePickerController()
@@ -26,6 +43,9 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
         picker.delegate = self
         picker.allowsEditing = true
         present(picker, animated: true)
+        
+        let random = Int.random(in: 1...10)
+        let storageReference = Storage.storage().reference().child("images/file\(random).png")
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -74,6 +94,9 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
         imageData.sd_setImage(with: ref)
         
         imageData.backgroundColor = .clear
+        
+        feedbackText.isHidden = false
+        feedbackText.backgroundColor = .red
     }
     
     @IBAction func deleteImage(_ sender: Any) {
