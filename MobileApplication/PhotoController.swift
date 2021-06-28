@@ -11,6 +11,7 @@ import Foundation
 import FirebaseStorage
 import FirebaseUI
 import GoogleSignIn
+import FirebaseAuth
 
 class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
@@ -18,7 +19,6 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
     }
     
     @IBOutlet weak var imageData: UIImageView!
-    @IBOutlet weak var feedbackText: UITextView!
     
     private let storage = Storage.storage().reference()
     
@@ -28,12 +28,33 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
     
     
     @IBOutlet weak var backButtonAction: UIButton!
+   
+    @IBOutlet weak var pullButtonOutlet: UIButton!
+    @IBOutlet weak var deleteButtonOutlet: UIButton!
+    
+    
     
     
     @IBAction func signOut(_ sender: Any) {
         GIDSignIn.sharedInstance()?.disconnect()
-        
+        do{
+        try Auth.auth().signOut()
+        } catch {
+            
+        }
     }
+   
+    override func viewDidLoad() {
+        buttonLook(button: pullButtonOutlet)
+        buttonLook(button: deleteButtonOutlet)
+    }
+    
+    func buttonLook(button: UIButton) {
+            button.tintColor = UIColor(red: 5/255, green: 126/255, blue: 255/255, alpha: 1)
+           button.layer.cornerRadius = 5
+           button.layer.borderColor = UIColor(red: 5/255, green: 122/255, blue: 255/255, alpha: 1).cgColor
+           button.layer.borderWidth = 1
+       }
     
     
     @IBAction func uploadButton(_ sender: UIButton) {
@@ -94,9 +115,7 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
         imageData.sd_setImage(with: ref)
         
         imageData.backgroundColor = .clear
-        
-        feedbackText.isHidden = false
-        feedbackText.backgroundColor = .red
+  
     }
     
     @IBAction func deleteImage(_ sender: Any) {
@@ -117,30 +136,6 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
         
         
     }
-    
-    
-    @IBAction func showData(_ sender: Any) {
-        
-        let random = Int.random(in: 1...10)
-       let storageReference = Storage.storage().reference().child("images/file\(random).png")
-     //   let storageReference = Storage.
-        storageReference.listAll { (result, error) in
-          if let error = error {
-            // ...
-          }
-          for prefix in result.prefixes {
-            // The prefixes under storageReference.
-            // You may call listAll(completion:) recursively on them.
-          }
-          for item in result.items {
-            // The items under storageReference.
-          }
-        }
-    }
-    
-    
-    
-    
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)

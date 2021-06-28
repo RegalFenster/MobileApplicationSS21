@@ -10,6 +10,7 @@ target 'MobileApplication' do
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
+pod 'Firebase/Auth'
 
 pod 'FirebaseUI/Auth'
 pod 'FirebaseUI/Google'
@@ -17,6 +18,7 @@ pod 'FirebaseUI/Facebook'
 pod 'FirebaseUI/OAuth'
 pod 'FirebaseUI/Phone'
 pod 'FirebaseUI/Storage'
+pod 'FBSDKLoginKit'
 
 # add pods for desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
