@@ -162,7 +162,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHn-fs-D7g">
-                                <rect key="frame" x="140" y="519" width="134" height="30"/>
+                                <rect key="frame" x="130" y="519" width="154" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6RK-Rn-wik"/>
                                 </constraints>
@@ -173,7 +173,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW8-6s-1xU">
-                                <rect key="frame" x="130" y="639" width="154" height="30"/>
+                                <rect key="frame" x="130" y="619" width="154" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8tG-h2-ChQ"/>
                                 </constraints>
@@ -205,15 +205,15 @@
                             <constraint firstItem="2Ti-96-3U7" firstAttribute="leading" secondItem="gjb-Dm-4O1" secondAttribute="leading" constant="20" id="24K-DB-BXd"/>
                             <constraint firstItem="Ijw-OM-MFd" firstAttribute="leading" secondItem="gjb-Dm-4O1" secondAttribute="leading" constant="26" id="64m-f4-IpP"/>
                             <constraint firstItem="yW8-6s-1xU" firstAttribute="centerX" secondItem="1gT-XW-l3o" secondAttribute="centerX" id="6HK-9n-vWJ"/>
-                            <constraint firstItem="yW8-6s-1xU" firstAttribute="top" secondItem="eHn-fs-D7g" secondAttribute="bottom" constant="90" id="6mu-fu-JDT"/>
-                            <constraint firstItem="eHn-fs-D7g" firstAttribute="leading" secondItem="gjb-Dm-4O1" secondAttribute="leading" constant="140" id="CaF-fd-9e4"/>
+                            <constraint firstItem="yW8-6s-1xU" firstAttribute="top" secondItem="eHn-fs-D7g" secondAttribute="bottom" constant="70" id="6mu-fu-JDT"/>
+                            <constraint firstItem="eHn-fs-D7g" firstAttribute="leading" secondItem="gjb-Dm-4O1" secondAttribute="leading" constant="130" id="CaF-fd-9e4"/>
                             <constraint firstItem="yW8-6s-1xU" firstAttribute="leading" secondItem="gjb-Dm-4O1" secondAttribute="leading" constant="130" id="EmI-Tn-XQh"/>
                             <constraint firstItem="2Ti-96-3U7" firstAttribute="top" secondItem="DQF-ys-Kra" secondAttribute="bottom" constant="100" id="TyD-hJ-frw"/>
                             <constraint firstItem="eHn-fs-D7g" firstAttribute="top" secondItem="2Ti-96-3U7" secondAttribute="bottom" constant="130" id="fd7-R4-azG"/>
                             <constraint firstItem="gjb-Dm-4O1" firstAttribute="trailing" secondItem="DQF-ys-Kra" secondAttribute="trailing" constant="20" id="iyk-yz-IZC"/>
                             <constraint firstItem="Ijw-OM-MFd" firstAttribute="top" secondItem="gjb-Dm-4O1" secondAttribute="top" constant="20" id="kX2-eN-5NO"/>
                             <constraint firstItem="gjb-Dm-4O1" firstAttribute="trailing" secondItem="yW8-6s-1xU" secondAttribute="trailing" constant="130" id="m6g-qK-mkF"/>
-                            <constraint firstItem="gjb-Dm-4O1" firstAttribute="trailing" secondItem="eHn-fs-D7g" secondAttribute="trailing" constant="140" id="rJw-na-nos"/>
+                            <constraint firstItem="gjb-Dm-4O1" firstAttribute="trailing" secondItem="eHn-fs-D7g" secondAttribute="trailing" constant="130" id="rJw-na-nos"/>
                             <constraint firstItem="DQF-ys-Kra" firstAttribute="top" secondItem="gjb-Dm-4O1" secondAttribute="top" constant="20" id="y8E-sO-ZQL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gjb-Dm-4O1"/>

@@ -14,26 +14,20 @@ import GoogleSignIn
 import FirebaseAuth
 
 class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GIDSignInDelegate {
+   
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         return
     }
     
     @IBOutlet weak var imageData: UIImageView!
-    
-    private let storage = Storage.storage().reference()
-    
-    let storageRef = Storage.storage().reference()
-    
-    
-    
-    
     @IBOutlet weak var backButtonAction: UIButton!
-   
     @IBOutlet weak var pullButtonOutlet: UIButton!
     @IBOutlet weak var deleteButtonOutlet: UIButton!
     
     
-    
+    private let storage = Storage.storage().reference()
+ 
     
     @IBAction func signOut(_ sender: Any) {
         GIDSignIn.sharedInstance()?.disconnect()
@@ -50,10 +44,10 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
     }
     
     func buttonLook(button: UIButton) {
-            button.tintColor = UIColor(red: 5/255, green: 126/255, blue: 255/255, alpha: 1)
-           button.layer.cornerRadius = 5
-           button.layer.borderColor = UIColor(red: 5/255, green: 122/255, blue: 255/255, alpha: 1).cgColor
-           button.layer.borderWidth = 1
+        button.tintColor = UIColor(red: 5/255, green: 126/255, blue: 255/255, alpha: 1)
+        button.layer.cornerRadius = 5
+        button.layer.borderColor = UIColor(red: 5/255, green: 122/255, blue: 255/255, alpha: 1).cgColor
+        button.layer.borderWidth = 1
        }
     
     
@@ -73,7 +67,7 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
         picker.dismiss(animated: true, completion: nil)
         guard let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
         
-        return
+            return
         }
         
         guard let imageData = image.pngData() else {
@@ -96,14 +90,8 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
                 let urlString = url.absoluteString
                 print("Download URL: \(urlString)")
                 UserDefaults.standard.set(urlString, forKey: "url")
-                
-                
             })
-        
-            
-            
         })
-         
     }
 
     
@@ -113,14 +101,13 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
         let ref = storageRef.child("images/file.png")
         
         imageData.sd_setImage(with: ref)
-        
         imageData.backgroundColor = .clear
   
     }
     
     @IBAction func deleteImage(_ sender: Any) {
         
-         let storageRef = Storage.storage().reference()
+        let storageRef = Storage.storage().reference()
         
         let desertRef = storageRef.child("images/file.png")
 
@@ -132,9 +119,6 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
             // File deleted successfully
           }
         }
-        
-        
-        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
