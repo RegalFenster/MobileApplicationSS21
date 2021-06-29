@@ -15,30 +15,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Max" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YO3-eI-YBS">
-                                <rect key="frame" x="130" y="131" width="154" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Max" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YO3-eI-YBS">
+                                <rect key="frame" x="130" y="183" width="154" height="34"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mustermann" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ly-QI-ZNu">
-                                <rect key="frame" x="130" y="226" width="154" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mustermann" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ly-QI-ZNu">
+                                <rect key="frame" x="130" y="280" width="154" height="34"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="max.muster@gmail.com" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="e3c-g2-m8D">
-                                <rect key="frame" x="130" y="311" width="154" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="max.muster@gmail.com" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="e3c-g2-m8D">
+                                <rect key="frame" x="130" y="367" width="154" height="34"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivv-o2-Acu">
-                                <rect key="frame" x="130" y="280" width="154" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="130" y="334" width="154" height="23"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIT-m2-N13">
-                                <rect key="frame" x="130" y="195" width="154" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="130" y="247" width="154" height="23"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -54,30 +54,37 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoT-w1-yUc">
-                                <rect key="frame" x="130" y="100" width="154" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="130" y="150" width="154" height="23"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pga-cl-JWy">
-                                <rect key="frame" x="130" y="406" width="154" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pga-cl-JWy">
+                                <rect key="frame" x="130" y="464" width="154" height="34"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6y-w4-6Ra">
-                                <rect key="frame" x="130" y="375" width="154" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="130" y="431" width="154" height="23"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4k-zp-k8F">
-                                <rect key="frame" x="130" y="490" width="154" height="30"/>
-                                <state key="normal" title="Submit"/>
+                                <rect key="frame" x="130" y="548" width="154" height="30"/>
+                                <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="enterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xqk-4s-FMH"/>
                                     <segue destination="MON-Wp-x9i" kind="modal" modalPresentationStyle="fullScreen" id="0TO-XT-B3q"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPQ-YX-498">
+                                <rect key="frame" x="90" y="50" width="234" height="34"/>
+                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="25"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -98,20 +105,23 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e3c-g2-m8D" secondAttribute="trailing" constant="130" id="T7L-jd-3Lv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C4k-zp-k8F" secondAttribute="trailing" constant="130" id="TAq-f8-Evs"/>
                             <constraint firstItem="1oC-oy-0gG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TEg-c3-J0W"/>
+                            <constraint firstItem="ZPQ-YX-498" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="VOz-am-aSH"/>
                             <constraint firstItem="WoT-w1-yUc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VW3-di-QYR"/>
                             <constraint firstItem="pga-cl-JWy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="ZNM-tn-pyA"/>
                             <constraint firstItem="rIT-m2-N13" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="coZ-sV-dtA"/>
                             <constraint firstItem="C4k-zp-k8F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dmH-kq-XA9"/>
                             <constraint firstItem="rIT-m2-N13" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eSb-uz-OGb"/>
+                            <constraint firstItem="ZPQ-YX-498" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="frN-5f-QCE"/>
                             <constraint firstItem="pga-cl-JWy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jYe-5d-kVO"/>
                             <constraint firstItem="Z6y-w4-6Ra" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="jhw-Lw-Vym"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WoT-w1-yUc" secondAttribute="trailing" constant="130" id="lsV-mZ-2NS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ivv-o2-Acu" secondAttribute="trailing" constant="130" id="mIq-yG-sqA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rIT-m2-N13" secondAttribute="trailing" constant="130" id="nJe-Fd-Jss"/>
-                            <constraint firstItem="WoT-w1-yUc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="oCJ-LF-MCj"/>
+                            <constraint firstItem="WoT-w1-yUc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="oCJ-LF-MCj"/>
                             <constraint firstItem="YO3-eI-YBS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qko-eP-XJu"/>
                             <constraint firstItem="YO3-eI-YBS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="qzI-Mn-ZfV"/>
                             <constraint firstItem="ivv-o2-Acu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tPa-tQ-U7S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZPQ-YX-498" secondAttribute="trailing" constant="90" id="tlo-kJ-Ugr"/>
                             <constraint firstItem="e3c-g2-m8D" firstAttribute="top" secondItem="ivv-o2-Acu" secondAttribute="bottom" constant="10" id="uP8-J7-UvO"/>
                             <constraint firstItem="1oC-oy-0gG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="w0G-e5-lje"/>
                             <constraint firstItem="WoT-w1-yUc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="wh5-we-J2D"/>
@@ -155,7 +165,7 @@
                                     <constraint firstAttribute="height" constant="30" id="7OH-qo-2ah"/>
                                     <constraint firstAttribute="width" constant="140" id="ER0-fo-Giu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <state key="normal" title="Upload Picture"/>
                                 <connections>
                                     <action selector="uploadButton:" destination="aAi-qO-93E" eventType="touchUpInside" id="4ef-75-wff"/>
@@ -166,8 +176,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6RK-Rn-wik"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Pull Image"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
+                                <state key="normal" title="Download Image"/>
                                 <connections>
                                     <action selector="downloadPicture:" destination="aAi-qO-93E" eventType="touchUpInside" id="Uek-KB-HwU"/>
                                 </connections>
@@ -177,7 +187,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8tG-h2-ChQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <state key="normal" title="Delete Image"/>
                                 <connections>
                                     <action selector="deleteImage:" destination="aAi-qO-93E" eventType="touchUpInside" id="z99-pt-xdS"/>
@@ -189,7 +199,7 @@
                                     <constraint firstAttribute="width" constant="71" id="ALa-Df-EHs"/>
                                     <constraint firstAttribute="height" constant="30" id="fzn-HI-zMo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -239,7 +249,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zhW-J3-BUh">
-                                <rect key="frame" x="100" y="193" width="214" height="34"/>
+                                <rect key="frame" x="100" y="187.5" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -247,19 +257,20 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VNc-IC-zjg">
-                                <rect key="frame" x="100" y="288" width="214" height="34"/>
+                                <rect key="frame" x="100" y="284.5" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWb-rI-Uxk">
-                                <rect key="frame" x="130" y="257" width="154" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="130" y="251.5" width="154" height="23"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGn-r2-IwW">
-                                <rect key="frame" x="102" y="362" width="210" height="30"/>
+                                <rect key="frame" x="102" y="358.5" width="210" height="35"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -268,35 +279,36 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYW-rf-LXu">
-                                <rect key="frame" x="130" y="162" width="154" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="130" y="154.5" width="154" height="23"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Tm-ss-wdN">
-                                <rect key="frame" x="150" y="732" width="114" height="30"/>
+                                <rect key="frame" x="150" y="727" width="114" height="35"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="I3L-P0-NzV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not a Member?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OZ8-Fe-31d">
-                                <rect key="frame" x="140" y="701" width="134" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="140" y="694" width="134" height="23"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOq-zz-AbX" customClass="GIDSignInButton">
-                                <rect key="frame" x="99" y="402" width="216" height="50"/>
+                                <rect key="frame" x="99" y="403.5" width="216" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JGq-up-Dqk"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picture Uploader" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sPf-BX-laP">
-                                <rect key="frame" x="100" y="84" width="214" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="100" y="84" width="214" height="40.5"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="30"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ez7-fS-Gtd">
@@ -307,20 +319,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6A-2u-cHb">
-                                <rect key="frame" x="0.0" y="670" width="414" height="1"/>
+                                <rect key="frame" x="0.0" y="663" width="414" height="1"/>
                                 <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="3hu-ZH-JBE"/>
                                 </constraints>
                             </view>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Something went wrong" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TSk-3s-rWw">
-                                <rect key="frame" x="50" y="552" width="314" height="52"/>
+                                <rect key="frame" x="50" y="553.5" width="314" height="52"/>
                                 <color key="backgroundColor" red="1" green="0.23980606601620147" blue="0.25933708483241891" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="H4f-BY-Jb9"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -453,6 +465,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ub0-WP-TNc"/>
+        <segue reference="sXw-Bg-etc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -59,7 +59,7 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
         picker.allowsEditing = true
         present(picker, animated: true)
         
-        let random = Int.random(in: 1...10)
+        let random = Int.random(in: 1...100)
         let storageReference = Storage.storage().reference().child("images/file\(random).png")
     }
     
@@ -74,7 +74,7 @@ class PhotoController: UIViewController, UIImagePickerControllerDelegate, UINavi
             return
         }
         
-        let random = Int.random(in: 1...10)
+        let random = Int.random(in: 1...100)
               let storageReference = Storage.storage().reference().child("images/file\(random).png")
         
         storage.child("images/file.png").putData(imageData, metadata: nil, completion:{_, error in
